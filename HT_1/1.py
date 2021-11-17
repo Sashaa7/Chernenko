@@ -5,6 +5,6 @@
 #     Output :
 #     List : [‘1', ' 5', ' 7', ' 23']
 #     Tuple : (‘1', ' 5', ' 7', ' 23')
- 
-a = int(input())
-print(a)
+a = input()  # here we input our numbers
+b = a.split() 
+print(b)
