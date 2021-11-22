@@ -8,7 +8,7 @@
 
 my_list = [(10, 20, 23324, 40), (4023, 50, 60), (12, 123, 344,80, 90), (1000,)]
 
-change_number = int(input("Write the number to change:"))
+change_number = input("Write the number to change:")
 
 new_list = [tpl[:-1] + (change_number,) for tpl in my_list]
 
