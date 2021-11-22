@@ -11,6 +11,6 @@ dict_2 = {3:305, 4:42340}
 
 dict_3 = {5:5450, 6:6045}
 
-update_our_dictionary_1 = dict_1.update(dict_2) 
-update_our_dictionary_2 = dict_1.update(dict_3)
+dict_1.update(dict_2) 
+dict_1.update(dict_3)
 print(dict_1)
