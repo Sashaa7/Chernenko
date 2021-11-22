@@ -6,10 +6,10 @@
 #MAX: 60
 dict_1 = {1: 100, 2: 230, 3: 330, 4: 23440, 5: 3450, 6: 60}
 
-result_max = max(zip(dict_1.values()))
+result_max = max((dict_1.values()))
 
-print("MAX:", result_max)
+print("MAX:", (result_max))
 
-result_min = min(zip(dict_1.values()))
+result_min = min((dict_1.values()))
 
-print("MIN:", result_min)
+print("MIN:", (result_min))
