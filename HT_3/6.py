@@ -4,21 +4,30 @@
 #-  якщо довжина менше 30 -> прiнтує суму всiх чисел та окремо рядок без цифр (лише з буквами)
 #-  якщо довжина бульше 50 - > ваша фантазiя
 
-ryadok = input()
+my_string = input()
+letters_only = []
+my_suma = 0
+numbers = 0
+letters = 0
 
-number_of_characters = len(ryadok)
+for symbol in my_string:
+  if symbol.isdigit():
+    my_suma += int(symbol)
+    numbers += 1
+  elif symbol.isalpha():
+    letters_only += symbol
+    letters += 1
 
-def our_function():
-  if 30 < number_of_characters < 50:
-    print(number_of_characters)
-  
-  if number_of_characters < 30:
-    for symbol in ryadok:
-      if symbol.isalpha():
-        print(symbol, end = "")
-    
-  if number_of_characters > 50:
-    print('Hello world!')
+if len(my_string) > 30 and len(my_string) < 50:
+  print('Дожина:', len(my_string))
+  print('Цифри:', numbers)
+  print('Букви:', letters)
 
-our_function()
+elif len(my_string) < 30:
+  print('Сумма чисел', my_suma)
+  print('Рядок без цифр', ''.join(letters_only))
+
+elif len(my_string) > 50:
+  print('Hello world')
+
 
