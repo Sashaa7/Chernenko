@@ -7,6 +7,10 @@ symbol = input('Write what are you want to do: +, -, * or /:')
 
 the_last_number = int(input('Write second number:'))
 
+
+  
+
+
 def calculator():
 	if symbol == '+':
 		print(first_number + the_last_number)
@@ -16,7 +20,8 @@ def calculator():
 		print(first_number * the_last_number)
 	if symbol == '/':
 		print(first_number / the_last_number)
-	if symbol == '/' and the_last_number == 0:
+
+if symbol == '/' and the_last_number == 0:
 		print('error')
-		
-calculator()
+else:
+  calculator()
