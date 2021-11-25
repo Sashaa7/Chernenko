@@ -16,5 +16,7 @@ def calculator():
 		print(first_number * the_last_number)
 	if symbol == '/':
 		print(first_number / the_last_number)
+	if symbol == '/' and the_last_number == 0:
+		print('error')
 		
 calculator()
