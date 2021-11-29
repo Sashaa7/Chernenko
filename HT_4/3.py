@@ -6,11 +6,12 @@ def is_prime():
  if 1 < number < 1000:
      for i in range(2, int(number/2)+1):
           if (number % i) == 0:
-             print("false")
+             return "false"
              break
      else:
-         print("true")
+         return "true"
 
  else:
-     print("error")
-is_prime()
+     return "error"
+a = is_prime()
+print(a)
