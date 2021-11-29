@@ -1,8 +1,8 @@
 #Написати функцію < prime_list >, яка прийматиме 2 аргументи - початок і кінець діапазона,
 # і вертатиме список простих чисел всередині цього діапазона.
 
-first_number = int(input())
-second_number = int(input())
+first_number = int(input('Write first number:'))
+second_number = int(input('Write second number:'))
 new_list = []
 
 def prime_list():
@@ -15,5 +15,6 @@ def prime_list():
       else:  
           new_list.append(i)
  
-  print(new_list)
-prime_list()
+  return new_list
+a = prime_list()
+print(a)
